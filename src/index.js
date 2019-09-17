@@ -8,6 +8,7 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import TimeDisplayer from "./TimeDisplayer";
 import PositionedSnackbar from "./SpentTime";
 import WatchIcon from "@material-ui/icons/Watch";
+import Typography from '@material-ui/core/Typography';
 
 import "./styles.css";
 
@@ -87,7 +88,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+      <div className="Table">
         <TimeDisplayer EditEntry={this.EditEntry} rows={this.state.rows} />
+        </div>
         <div className="TimeSpent" />
         <PositionedSnackbar
           time={msToTime(this.state.time)}
@@ -95,39 +98,46 @@ class App extends React.Component {
         />
 
         <div className="Buttons">
-          <ButtonGroup size="small" aria-label="small outlined button group">
             <Button
               onClick={() => {
                 this.setState(prevState => ({
                   snackBarOpen: !prevState.snackBarOpen
                 }));
               }}
-              variant="contained"
+              variant="outlined"
               color="primary"
               className="Button"
+              style={{ fontSize: '0.8em' }}
             >
-              Show time
+            <Typography nowrap variant='button'>
+            Time
+            </Typography>
               <WatchIcon className="RightIcon" />
             </Button>
             <Button
               onClick={this.handleEntry}
-              variant="contained"
+              variant="outlined"
               color="primary"
               className="Button"
+              style={{ fontSize: '0.8em', textOverflow: "ellipsis" }}
             >
-              Entry/departure
+            <Typography nowrap variant='button'>
+            Enter/Depart
+            </Typography>
               <AlarmIcon className="RightIcon" />
             </Button>
             <Button
               onClick={this.handleReset}
               className="Button"
-              variant="contained"
+              variant="outlined"
               color="primary"
+              style={{ fontSize: '0.8em' }}
             >
-              Reset
+            <Typography nowrap variant='button'>
+            Reset
+            </Typography>
               <DeleteIcon className="RightIcon" />
             </Button>
-          </ButtonGroup>
         </div>
       </div>
     );
