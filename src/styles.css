@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Buttons {
+  margin: auto;
+  margin-bottom: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.RightIcon {
+  margin-left: 2vh;
+}
+
+.Button {
+  width: 50vh;
+}
