@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WorkEntryTracker/static/css/main.0f3970c1.chunk.css",
+    "main.js": "/WorkEntryTracker/static/js/main.cc320f00.chunk.js",
+    "main.js.map": "/WorkEntryTracker/static/js/main.cc320f00.chunk.js.map",
+    "runtime~main.js": "/WorkEntryTracker/static/js/runtime~main.fde0538a.js",
+    "runtime~main.js.map": "/WorkEntryTracker/static/js/runtime~main.fde0538a.js.map",
+    "static/js/2.93aa4487.chunk.js": "/WorkEntryTracker/static/js/2.93aa4487.chunk.js",
+    "static/js/2.93aa4487.chunk.js.map": "/WorkEntryTracker/static/js/2.93aa4487.chunk.js.map",
+    "index.html": "/WorkEntryTracker/index.html",
+    "precache-manifest.d07debe4104ec95ec8bcffb0e370ba39.js": "/WorkEntryTracker/precache-manifest.d07debe4104ec95ec8bcffb0e370ba39.js",
+    "service-worker.js": "/WorkEntryTracker/service-worker.js",
+    "static/css/main.0f3970c1.chunk.css.map": "/WorkEntryTracker/static/css/main.0f3970c1.chunk.css.map"
+  }
+}
